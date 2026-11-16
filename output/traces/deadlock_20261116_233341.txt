@@ -1,0 +1,10 @@
+=== BANKER'S DEADLOCK VERIFICATION ===
+Available: [3, 3, 2]
+Safe Status: True
+Sequence: P1 -> P3 -> P4 -> P0 -> P2
+
+Step 1: Process P1 finishes. Work Before: [3, 3, 2] + Alloc: [2, 0, 0] -> Work After: [5, 3, 2]
+Step 2: Process P3 finishes. Work Before: [5, 3, 2] + Alloc: [2, 1, 1] -> Work After: [7, 4, 3]
+Step 3: Process P4 finishes. Work Before: [7, 4, 3] + Alloc: [0, 0, 2] -> Work After: [7, 4, 5]
+Step 4: Process P0 finishes. Work Before: [7, 4, 5] + Alloc: [0, 1, 0] -> Work After: [7, 5, 5]
+Step 5: Process P2 finishes. Work Before: [7, 5, 5] + Alloc: [3, 0, 2] -> Work After: [10, 5, 7]

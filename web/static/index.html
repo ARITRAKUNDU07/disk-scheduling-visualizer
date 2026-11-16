@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OS Resource Manager Simulator (osrm) | ENSC-351</title>
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <div id="app-root">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand-section">
+        <div class="brand-logo">OS</div>
+        <div>
+          <span class="brand-title">OS Resource Manager</span>
+          <span class="brand-badge">ENSC-351 Capstone</span>
+        </div>
+      </div>
+
+      <!-- Navigation Pills -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#dashboard" class="nav-pill active" data-route="dashboard">Dashboard</a>
+        <a href="#disk" class="nav-pill" data-route="disk">Disk Scheduling</a>
+        <a href="#cpu" class="nav-pill" data-route="cpu">CPU Scheduling</a>
+        <a href="#pages" class="nav-pill" data-route="pages">Page Replacement</a>
+        <a href="#deadlock" class="nav-pill" data-route="deadlock">Deadlock Banker</a>
+        <a href="#tools" class="nav-pill" data-route="tools">Tools & Diagnostics</a>
+      </nav>
+    </header>
+
+    <!-- Dynamic Viewport Area -->
+    <main id="app-viewport" class="app-viewport">
+      <!-- Injected dynamically by ES module router in js/app.js -->
+    </main>
+  </div>
+
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Vanilla ES Module Entry Point -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

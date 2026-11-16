@@ -1,0 +1,71 @@
+=== DISK SCHEDULING EXECUTION TRACES ===
+
+--- FCFS ---
+Step 1: 53 -> 98 : 45 cylinders (Total: 45)
+Step 2: 98 -> 183 : 85 cylinders (Total: 130)
+Step 3: 183 -> 37 : 146 cylinders (Total: 276)
+Step 4: 37 -> 122 : 85 cylinders (Total: 361)
+Step 5: 122 -> 14 : 108 cylinders (Total: 469)
+Step 6: 14 -> 124 : 110 cylinders (Total: 579)
+Step 7: 124 -> 65 : 59 cylinders (Total: 638)
+Step 8: 65 -> 67 : 2 cylinders (Total: 640)
+Total: 640
+
+--- SSTF ---
+Step 1: 53 -> 65 : 12 cylinders (Total: 12)
+Step 2: 65 -> 67 : 2 cylinders (Total: 14)
+Step 3: 67 -> 37 : 30 cylinders (Total: 44)
+Step 4: 37 -> 14 : 23 cylinders (Total: 67)
+Step 5: 14 -> 98 : 84 cylinders (Total: 151)
+Step 6: 98 -> 122 : 24 cylinders (Total: 175)
+Step 7: 122 -> 124 : 2 cylinders (Total: 177)
+Step 8: 124 -> 183 : 59 cylinders (Total: 236)
+Total: 236
+
+--- SCAN ---
+Step 1: 53 -> 37 : 16 cylinders (Total: 16)
+Step 2: 37 -> 14 : 23 cylinders (Total: 39)
+Step 3: 14 -> 0 [Boundary] : 14 cylinders (Total: 53)
+Step 4: 0 -> 65 : 65 cylinders (Total: 118)
+Step 5: 65 -> 67 : 2 cylinders (Total: 120)
+Step 6: 67 -> 98 : 31 cylinders (Total: 151)
+Step 7: 98 -> 122 : 24 cylinders (Total: 175)
+Step 8: 122 -> 124 : 2 cylinders (Total: 177)
+Step 9: 124 -> 183 : 59 cylinders (Total: 236)
+Total: 236
+
+--- C-SCAN ---
+Step 1: 53 -> 37 : 16 cylinders (Total: 16)
+Step 2: 37 -> 14 : 23 cylinders (Total: 39)
+Step 3: 14 -> 0 [Boundary] : 14 cylinders (Total: 53)
+Step 4: 0 -> 199 [Return Jump] : 199 cyl (Total: 252)
+Step 5: 199 -> 183 : 16 cylinders (Total: 268)
+Step 6: 183 -> 124 : 59 cylinders (Total: 327)
+Step 7: 124 -> 122 : 2 cylinders (Total: 329)
+Step 8: 122 -> 98 : 24 cylinders (Total: 353)
+Step 9: 98 -> 67 : 31 cylinders (Total: 384)
+Step 10: 67 -> 65 : 2 cylinders (Total: 386)
+Total: 386
+
+--- LOOK ---
+Step 1: 53 -> 37 : 16 cylinders (Total: 16)
+Step 2: 37 -> 14 : 23 cylinders (Total: 39)
+Step 3: 14 -> 65 : 51 cylinders (Total: 90)
+Step 4: 65 -> 67 : 2 cylinders (Total: 92)
+Step 5: 67 -> 98 : 31 cylinders (Total: 123)
+Step 6: 98 -> 122 : 24 cylinders (Total: 147)
+Step 7: 122 -> 124 : 2 cylinders (Total: 149)
+Step 8: 124 -> 183 : 59 cylinders (Total: 208)
+Total: 208
+
+--- C-LOOK ---
+Step 1: 53 -> 37 : 16 cylinders (Total: 16)
+Step 2: 37 -> 14 : 23 cylinders (Total: 39)
+Step 3: 14 -> 183 [Return Jump] : 169 cyl (Total: 208)
+Step 4: 183 -> 124 : 59 cylinders (Total: 267)
+Step 5: 124 -> 122 : 2 cylinders (Total: 269)
+Step 6: 122 -> 98 : 24 cylinders (Total: 293)
+Step 7: 98 -> 67 : 31 cylinders (Total: 324)
+Step 8: 67 -> 65 : 2 cylinders (Total: 326)
+Total: 326
+

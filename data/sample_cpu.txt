@@ -1,0 +1,6 @@
+# CPU Scheduling Sample Dataset (Silberschatz Verification Benchmark)
+quantum=4
+# pid,arrival,burst,priority
+P1,0,24,3
+P2,0,3,1
+P3,0,3,2

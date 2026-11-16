@@ -1,0 +1,32 @@
+=== CPU SCHEDULING EXECUTION TRACES ===
+
+--- FCFS ---
+|----|----|----|
+| P1 | P2 | P3 |
+0   24   27   30
+Avg Waiting: 17.0
+
+--- SJF ---
+|----|----|----|
+| P2 | P3 | P1 |
+0    3    6   30
+Avg Waiting: 3.0
+
+--- SRTF ---
+|----|----|----|
+| P2 | P3 | P1 |
+0    3    6   30
+Avg Waiting: 3.0
+
+--- Round Robin ---
+|----|----|----|----|----|----|----|----|
+| P1 | P2 | P3 | P1 | P1 | P1 | P1 | P1 |
+0    4    7   10   14   18   22   26   30
+Avg Waiting: 5.67
+
+--- Priority ---
+|----|----|----|
+| P2 | P3 | P1 |
+0    3    6   30
+Avg Waiting: 3.0
+

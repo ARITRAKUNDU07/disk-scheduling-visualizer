@@ -1,0 +1,6 @@
+# Disk Scheduling Large Dataset (Multi-Region Access Pattern - 16 Cylinders)
+size=500
+head=215
+direction=right
+ms_per_cyl=0.8
+requests=45, 120, 310, 85, 490, 15, 230, 375, 410, 180, 95, 340, 275, 60, 440, 195

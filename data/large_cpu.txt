@@ -1,0 +1,15 @@
+# CPU Scheduling Large Dataset (12 Mixed Workload Processes)
+quantum=5
+# pid,arrival,burst,priority
+P1,0,10,3
+P2,1,4,1
+P3,2,14,4
+P4,3,6,2
+P5,4,8,3
+P6,6,2,1
+P7,7,12,5
+P8,8,5,2
+P9,10,7,4
+P10,12,3,1
+P11,14,9,3
+P12,15,4,2

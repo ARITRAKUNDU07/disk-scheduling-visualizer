@@ -1,0 +1,6 @@
+# Disk Scheduling Sample Dataset (Silberschatz Verification Benchmark)
+size=200
+head=53
+direction=left
+ms_per_cyl=1.0
+requests=98, 183, 37, 122, 14, 124, 65, 67
